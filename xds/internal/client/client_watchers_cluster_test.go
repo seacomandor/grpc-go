@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
 )
 
 type clusterUpdateErr struct {

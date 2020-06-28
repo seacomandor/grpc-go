@@ -24,16 +24,16 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
+	"github.com/seacomandor/grpc-go/backoff"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/credentials"
+	"github.com/seacomandor/grpc-go/internal"
+	internalbackoff "github.com/seacomandor/grpc-go/internal/backoff"
+	"github.com/seacomandor/grpc-go/internal/envconfig"
+	"github.com/seacomandor/grpc-go/internal/transport"
+	"github.com/seacomandor/grpc-go/keepalive"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/stats"
 )
 
 // dialOptions configure a Dial call. dialOptions are set by the DialOption

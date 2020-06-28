@@ -19,8 +19,8 @@
 package grpc
 
 import (
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/status"
 )
 
 // PreparedMsg is responsible for creating a Marshalled and Compressed object.

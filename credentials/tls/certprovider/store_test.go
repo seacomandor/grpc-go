@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/testdata"
+	"github.com/seacomandor/grpc-go/internal/grpctest"
+	"github.com/seacomandor/grpc-go/testdata"
 )
 
 const (

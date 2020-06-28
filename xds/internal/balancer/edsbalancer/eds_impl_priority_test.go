@@ -23,10 +23,10 @@ import (
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/connectivity"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
 )
 
 // When a high priority is ready, adding/removing lower locality doesn't cause

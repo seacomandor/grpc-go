@@ -23,18 +23,18 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/edsbalancer"
+	"github.com/seacomandor/grpc-go/attributes"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/balancer/base"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/internal/buffer"
+	"github.com/seacomandor/grpc-go/internal/grpclog"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/serviceconfig"
+	"github.com/seacomandor/grpc-go/xds/internal/balancer/edsbalancer"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	xdsinternal "github.com/seacomandor/grpc-go/xds/internal"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
 )
 
 const (

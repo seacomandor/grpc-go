@@ -24,6 +24,6 @@
 package xds
 
 import (
-	_ "google.golang.org/grpc/xds/internal/balancer" // Register the balancers.
-	_ "google.golang.org/grpc/xds/internal/resolver" // Register the xds_resolver
+	_ "github.com/seacomandor/grpc-go/xds/internal/balancer" // Register the balancers.
+	_ "github.com/seacomandor/grpc-go/xds/internal/resolver" // Register the xds_resolver
 )

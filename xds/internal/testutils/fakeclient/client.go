@@ -22,9 +22,9 @@ package fakeclient
 import (
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/balancer/lrs"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/balancer/lrs"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
 )
 
 // Client is a fake implementation of an xds client. It exposes a bunch of

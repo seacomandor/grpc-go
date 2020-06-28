@@ -24,10 +24,10 @@ import (
 	"flag"
 	"time"
 
-	grpc "google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	grpc "github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/credentials/alts"
+	"github.com/seacomandor/grpc-go/grpclog"
+	testpb "github.com/seacomandor/grpc-go/interop/grpc_testing"
 )
 
 var (

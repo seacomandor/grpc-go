@@ -27,7 +27,7 @@ import (
 	endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	typepb "github.com/envoyproxy/go-control-plane/envoy/type"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal"
 )
 
 func parseAddress(socketAddress *corepb.SocketAddress) string {

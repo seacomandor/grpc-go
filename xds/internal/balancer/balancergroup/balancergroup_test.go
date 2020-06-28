@@ -23,13 +23,13 @@ import (
 
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/balancer/roundrobin"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
 )
 
 var (

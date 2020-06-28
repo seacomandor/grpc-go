@@ -27,8 +27,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils/fakeserver"
 )
 
 type serviceUpdateErr struct {

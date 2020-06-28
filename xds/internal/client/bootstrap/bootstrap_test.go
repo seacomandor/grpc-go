@@ -27,8 +27,8 @@ import (
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	"github.com/golang/protobuf/proto"
 	structpb "github.com/golang/protobuf/ptypes/struct"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/google"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/credentials/google"
 )
 
 var (

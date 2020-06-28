@@ -23,10 +23,10 @@ import (
 	"io"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/status"
+	testpb "github.com/seacomandor/grpc-go/test/grpc_testing"
 )
 
 type ctxKey string

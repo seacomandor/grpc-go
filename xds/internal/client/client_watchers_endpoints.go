@@ -21,7 +21,7 @@ package client
 import (
 	"time"
 
-	"google.golang.org/grpc/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal"
 )
 
 // OverloadDropConfig contains the config to drop overloads.

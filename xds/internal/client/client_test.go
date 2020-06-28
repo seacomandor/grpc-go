@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/internal/grpclog"
+	"github.com/seacomandor/grpc-go/internal/grpctest"
+	"github.com/seacomandor/grpc-go/xds/internal/client/bootstrap"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils/fakeserver"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 )

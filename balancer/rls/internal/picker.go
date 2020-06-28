@@ -24,11 +24,11 @@ import (
 	"errors"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/cache"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/balancer/rls/internal/cache"
+	"github.com/seacomandor/grpc-go/balancer/rls/internal/keys"
+	rlspb "github.com/seacomandor/grpc-go/balancer/rls/internal/proto/grpc_lookup_v1"
+	"github.com/seacomandor/grpc-go/metadata"
 )
 
 var errRLSThrottled = errors.New("RLS call throttled at client side")

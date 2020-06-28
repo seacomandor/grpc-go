@@ -19,7 +19,7 @@ package testutils
 
 import (
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal"
 )
 
 // LocalityIDToProto converts a LocalityID to its proto representation.

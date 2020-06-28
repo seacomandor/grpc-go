@@ -21,7 +21,7 @@ package testutils
 import (
 	"testing"
 
-	"google.golang.org/grpc/balancer"
+	"github.com/seacomandor/grpc-go/balancer"
 )
 
 func TestIsRoundRobin(t *testing.T) {

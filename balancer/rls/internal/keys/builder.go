@@ -27,8 +27,8 @@ import (
 	"sort"
 	"strings"
 
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
+	rlspb "github.com/seacomandor/grpc-go/balancer/rls/internal/proto/grpc_lookup_v1"
+	"github.com/seacomandor/grpc-go/metadata"
 )
 
 // BuilderMap provides a mapping from a request path to the key builder to be

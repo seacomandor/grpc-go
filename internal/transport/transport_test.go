@@ -35,16 +35,16 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/seacomandor/grpc-go/attributes"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/credentials"
+	"github.com/seacomandor/grpc-go/internal/grpctest"
+	"github.com/seacomandor/grpc-go/internal/leakcheck"
+	"github.com/seacomandor/grpc-go/internal/testutils"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/status"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
 )
 
 type s struct {

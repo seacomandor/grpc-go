@@ -23,7 +23,7 @@ import (
 	"context"
 	"net"
 
-	"google.golang.org/grpc/credentials"
+	"github.com/seacomandor/grpc-go/credentials"
 )
 
 const (

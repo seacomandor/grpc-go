@@ -26,17 +26,17 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer" // To parse LB config
-	"google.golang.org/grpc/xds/internal/client"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/internal"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/serviceconfig"
+	xdsinternal "github.com/seacomandor/grpc-go/xds/internal"
+	_ "github.com/seacomandor/grpc-go/xds/internal/balancer/cdsbalancer" // To parse LB config
+	"github.com/seacomandor/grpc-go/xds/internal/client"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
+	"github.com/seacomandor/grpc-go/xds/internal/client/bootstrap"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils/fakeclient"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 )

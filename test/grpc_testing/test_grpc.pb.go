@@ -4,9 +4,9 @@ package grpc_testing
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/seacomandor/grpc-go"
+	codes "github.com/seacomandor/grpc-go/codes"
+	status "github.com/seacomandor/grpc-go/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -15,7 +15,7 @@ const _ = grpc.SupportPackageIsVersion6
 
 // TestServiceClient is the client API for TestService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/seacomandor/grpc-go/?tab=doc#ClientConn.NewStream.
 type TestServiceClient interface {
 	// One empty request followed by one empty response.
 	EmptyCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)

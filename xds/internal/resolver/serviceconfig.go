@@ -22,7 +22,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
 )
 
 const (

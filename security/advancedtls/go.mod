@@ -1,4 +1,4 @@
-module google.golang.org/grpc/security/advancedtls
+module github.com/seacomandor/grpc-go/security/advancedtls
 
 go 1.13
 
@@ -9,5 +9,5 @@ require (
 	golang.org/x/sys v0.0.0-20200602225109-6fdc65e7d980 // indirect
 	golang.org/x/text v0.3.3 // indirect
 	google.golang.org/genproto v0.0.0-20200513103714-09dca8ec2884 // indirect
-	google.golang.org/grpc v1.29.1
+	github.com/seacomandor/grpc-go v1.29.1
 )

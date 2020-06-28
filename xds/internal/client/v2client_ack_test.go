@@ -27,9 +27,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils/fakeserver"
 )
 
 func startXDSV2Client(t *testing.T, cc *grpc.ClientConn) (v2c *v2Client, cbLDS, cbRDS, cbCDS, cbEDS *testutils.Channel, cleanup func()) {

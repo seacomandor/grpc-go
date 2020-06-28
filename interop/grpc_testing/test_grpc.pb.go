@@ -4,9 +4,9 @@ package grpc_testing
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/seacomandor/grpc-go"
+	codes "github.com/seacomandor/grpc-go/codes"
+	status "github.com/seacomandor/grpc-go/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -15,7 +15,7 @@ const _ = grpc.SupportPackageIsVersion6
 
 // TestServiceClient is the client API for TestService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/seacomandor/grpc-go/?tab=doc#ClientConn.NewStream.
 type TestServiceClient interface {
 	// One empty request followed by one empty response.
 	EmptyCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -423,7 +423,7 @@ var _TestService_serviceDesc = grpc.ServiceDesc{
 
 // UnimplementedServiceClient is the client API for UnimplementedService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/seacomandor/grpc-go/?tab=doc#ClientConn.NewStream.
 type UnimplementedServiceClient interface {
 	// A call that no server should implement
 	UnimplementedCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -499,7 +499,7 @@ var _UnimplementedService_serviceDesc = grpc.ServiceDesc{
 
 // LoadBalancerStatsServiceClient is the client API for LoadBalancerStatsService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/seacomandor/grpc-go/?tab=doc#ClientConn.NewStream.
 type LoadBalancerStatsServiceClient interface {
 	// Gets the backend distribution for RPCs sent by a test client.
 	GetClientStats(ctx context.Context, in *LoadBalancerStatsRequest, opts ...grpc.CallOption) (*LoadBalancerStatsResponse, error)

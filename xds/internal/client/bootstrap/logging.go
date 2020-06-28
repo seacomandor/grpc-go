@@ -18,7 +18,7 @@
 
 package bootstrap
 
-import "google.golang.org/grpc/internal/grpclog"
+import "github.com/seacomandor/grpc-go/internal/grpclog"
 
 const prefix = "[xds-bootstrap] "
 

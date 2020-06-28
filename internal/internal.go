@@ -24,8 +24,8 @@ import (
 	"context"
 	"time"
 
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/serviceconfig"
 )
 
 var (

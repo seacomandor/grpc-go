@@ -28,8 +28,8 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/seacomandor/grpc-go/grpclog"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/grpclog"
 )
 
 var logger = grpclog.Component("core")

@@ -28,12 +28,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/balancer/rls/internal/testutils/fakeserver"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"github.com/seacomandor/grpc-go"
+	rlspb "github.com/seacomandor/grpc-go/balancer/rls/internal/proto/grpc_lookup_v1"
+	"github.com/seacomandor/grpc-go/balancer/rls/internal/testutils/fakeserver"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/internal/testutils"
+	"github.com/seacomandor/grpc-go/status"
 )
 
 const (

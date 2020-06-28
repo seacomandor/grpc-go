@@ -21,8 +21,8 @@ package balancergroup
 import (
 	"testing"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/xds/internal/testutils"
+	"github.com/seacomandor/grpc-go/internal/grpctest"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils"
 )
 
 type s struct {

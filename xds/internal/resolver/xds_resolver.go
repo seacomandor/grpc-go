@@ -23,14 +23,14 @@ import (
 	"context"
 	"fmt"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/resolver"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/attributes"
+	"github.com/seacomandor/grpc-go/internal/grpclog"
+	"github.com/seacomandor/grpc-go/resolver"
 
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	xdsinternal "github.com/seacomandor/grpc-go/xds/internal"
+	xdsclient "github.com/seacomandor/grpc-go/xds/internal/client"
+	"github.com/seacomandor/grpc-go/xds/internal/client/bootstrap"
 )
 
 const xdsScheme = "xds"

@@ -33,12 +33,12 @@ import (
 	"unicode/utf8"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/grpclog"
+	"github.com/seacomandor/grpc-go/status"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/status"
 )
 
 const (

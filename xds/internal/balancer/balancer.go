@@ -20,7 +20,7 @@
 package balancer
 
 import (
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
-	_ "google.golang.org/grpc/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
-	_ "google.golang.org/grpc/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
+	_ "github.com/seacomandor/grpc-go/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
+	_ "github.com/seacomandor/grpc-go/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
+	_ "github.com/seacomandor/grpc-go/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
 )

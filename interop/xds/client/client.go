@@ -27,11 +27,11 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/peer"
-	_ "google.golang.org/grpc/xds"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/grpclog"
+	testpb "github.com/seacomandor/grpc-go/interop/grpc_testing"
+	"github.com/seacomandor/grpc-go/peer"
+	_ "github.com/seacomandor/grpc-go/xds"
 )
 
 type statsWatcherKey struct {

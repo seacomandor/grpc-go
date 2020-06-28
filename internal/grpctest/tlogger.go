@@ -29,7 +29,7 @@ import (
 	"sync"
 	"testing"
 
-	"google.golang.org/grpc/grpclog"
+	"github.com/seacomandor/grpc-go/grpclog"
 )
 
 // TLogger serves as the grpclog logger and is the interface through which

@@ -23,14 +23,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/hierarchy"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/internal/grpclog"
+	"github.com/seacomandor/grpc-go/internal/hierarchy"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/serviceconfig"
+	"github.com/seacomandor/grpc-go/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal/balancer/balancergroup"
 )
 
 const weightedTargetName = "weighted_target_experimental"

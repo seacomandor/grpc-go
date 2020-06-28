@@ -27,7 +27,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"github.com/seacomandor/grpc-go/xds/internal/testutils/fakeserver"
 )
 
 func (s) TestRDSGenerateRDSUpdateFromRouteConfiguration(t *testing.T) {

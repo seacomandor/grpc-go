@@ -33,13 +33,13 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/seacomandor/grpc-go"
+	_ "github.com/seacomandor/grpc-go/balancer/grpclb"
+	"github.com/seacomandor/grpc-go/credentials"
+	"github.com/seacomandor/grpc-go/credentials/alts"
+	"github.com/seacomandor/grpc-go/credentials/google"
+	testpb "github.com/seacomandor/grpc-go/interop/grpc_testing"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
 )
 
 var (

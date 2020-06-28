@@ -27,13 +27,13 @@ import (
 	"time"
 
 	corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"github.com/seacomandor/grpc-go"
+	"github.com/seacomandor/grpc-go/internal/backoff"
+	"github.com/seacomandor/grpc-go/internal/buffer"
+	"github.com/seacomandor/grpc-go/internal/grpclog"
+	"github.com/seacomandor/grpc-go/internal/grpcsync"
+	"github.com/seacomandor/grpc-go/keepalive"
+	"github.com/seacomandor/grpc-go/xds/internal/client/bootstrap"
 )
 
 // Options provides all parameters required for the creation of an xDS client.

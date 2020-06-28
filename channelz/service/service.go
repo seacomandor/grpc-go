@@ -25,15 +25,15 @@ import (
 
 	"github.com/golang/protobuf/ptypes"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
-	"google.golang.org/grpc"
-	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/status"
+	"github.com/seacomandor/grpc-go"
+	channelzgrpc "github.com/seacomandor/grpc-go/channelz/grpc_channelz_v1"
+	channelzpb "github.com/seacomandor/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/credentials"
+	"github.com/seacomandor/grpc-go/grpclog"
+	"github.com/seacomandor/grpc-go/internal/channelz"
+	"github.com/seacomandor/grpc-go/status"
 )
 
 func init() {

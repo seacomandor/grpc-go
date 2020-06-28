@@ -23,9 +23,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/grpclog"
-	externalserviceconfig "google.golang.org/grpc/serviceconfig"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/grpclog"
+	externalserviceconfig "github.com/seacomandor/grpc-go/serviceconfig"
 )
 
 // BalancerConfig is the balancer config part that service config's

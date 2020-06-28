@@ -25,5 +25,5 @@ package experimental
 // TODO: remove this package after one release.
 
 import (
-	_ "google.golang.org/grpc/xds" // Register the balancers and resolvers.
+	_ "github.com/seacomandor/grpc-go/xds" // Register the balancers and resolvers.
 )

@@ -30,24 +30,24 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"github.com/seacomandor/grpc-go/balancer"
+	"github.com/seacomandor/grpc-go/balancer/base"
+	"github.com/seacomandor/grpc-go/codes"
+	"github.com/seacomandor/grpc-go/connectivity"
+	"github.com/seacomandor/grpc-go/credentials"
+	"github.com/seacomandor/grpc-go/internal/backoff"
+	"github.com/seacomandor/grpc-go/internal/channelz"
+	"github.com/seacomandor/grpc-go/internal/grpcsync"
+	"github.com/seacomandor/grpc-go/internal/grpcutil"
+	"github.com/seacomandor/grpc-go/internal/transport"
+	"github.com/seacomandor/grpc-go/keepalive"
+	"github.com/seacomandor/grpc-go/resolver"
+	"github.com/seacomandor/grpc-go/serviceconfig"
+	"github.com/seacomandor/grpc-go/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "github.com/seacomandor/grpc-go/balancer/roundrobin"           // To register roundrobin.
+	_ "github.com/seacomandor/grpc-go/internal/resolver/dns"         // To register dns resolver.
+	_ "github.com/seacomandor/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
 )
 
 const (

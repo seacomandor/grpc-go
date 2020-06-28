@@ -28,7 +28,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	pb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
+	pb "github.com/seacomandor/grpc-go/binarylog/grpc_binarylog_v1"
 )
 
 var (

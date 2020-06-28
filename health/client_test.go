@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/connectivity"
+	"github.com/seacomandor/grpc-go/connectivity"
 )
 
 func (s) TestClientHealthCheckBackoff(t *testing.T) {

@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/transport"
+	"github.com/seacomandor/grpc-go/internal/transport"
 )
 
 type emptyServiceServer interface{}

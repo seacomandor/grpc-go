@@ -26,7 +26,7 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/seacomandor/grpc-go/xds/internal"
 )
 
 func (s) TestEDSParseRespProto(t *testing.T) {
