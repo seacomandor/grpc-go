@@ -24,6 +24,7 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
+	"github.com/getsentry/sentry-go"
 	"io"
 	"io/ioutil"
 	"math"
@@ -790,6 +791,7 @@ func toRPCErr(err error) error {
 		case context.DeadlineExceeded:
 			return status.Error(codes.DeadlineExceeded, err.Error())
 		case context.Canceled:
+			sentry.CaptureException(err)
 			return status.Error(codes.Canceled, err.Error())
 		}
 	}
