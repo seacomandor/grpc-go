@@ -21,6 +21,7 @@ package grpc
 import (
 	"context"
 	"errors"
+	"github.com/getsentry/sentry-go"
 	"io"
 	"math"
 	"strconv"
@@ -829,10 +830,16 @@ func (cs *clientStream) finish(err error) {
 	// Only one of cancel or trailer needs to be logged. In the cases where
 	// users don't call RecvMsg, users must have already canceled the RPC.
 	if cs.binlog != nil && status.Code(err) == codes.Canceled {
+
 		cs.binlog.Log(&binarylog.Cancel{
 			OnClientSide: true,
 		})
 	}
+
+	if status.Code(err) == codes.Canceled {
+		sentry.CaptureException(errors.New("client stream context canceled!"))
+	}
+
 	if err == nil {
 		cs.retryThrottler.successfulRPC()
 	}
@@ -843,6 +850,7 @@ func (cs *clientStream) finish(err error) {
 			cs.cc.incrCallsSucceeded()
 		}
 	}
+	sentry.CaptureMessage("норм кансель")
 	cs.cancel()
 }
 
