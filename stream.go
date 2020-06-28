@@ -258,6 +258,11 @@ func newClientStream(ctx context.Context, desc *StreamDesc, cc *ClientConn, meth
 		sh.HandleRPC(ctx, begin)
 	}
 
+	newCancel := func() {
+		sentry.CaptureMessage("New cancel!")
+		cancel()
+	}
+
 	cs := &clientStream{
 		callHdr:      callHdr,
 		ctx:          ctx,
@@ -269,7 +274,7 @@ func newClientStream(ctx context.Context, desc *StreamDesc, cc *ClientConn, meth
 		codec:        c.codec,
 		cp:           cp,
 		comp:         comp,
-		cancel:       cancel,
+		cancel:       newCancel,
 		beginTime:    beginTime,
 		firstAttempt: true,
 	}
