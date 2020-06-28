@@ -1250,9 +1250,9 @@ func (m *Scenarios) GetScenarios() []*Scenario {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.testing.ClientType", ClientType_name, ClientType_value)
-	proto.RegisterEnum("grpc.testing.ServerType", ServerType_name, ServerType_value)
-	proto.RegisterEnum("grpc.testing.RpcType", RpcType_name, RpcType_value)
+	proto.RegisterEnum("grpc.s.testing.ClientType", ClientType_name, ClientType_value)
+	proto.RegisterEnum("grpc.s.testing.ServerType", ServerType_name, ServerType_value)
+	proto.RegisterEnum("grpc.s.testing.RpcType", RpcType_name, RpcType_value)
 	proto.RegisterType((*PoissonParams)(nil), "grpc.testing.PoissonParams")
 	proto.RegisterType((*UniformParams)(nil), "grpc.testing.UniformParams")
 	proto.RegisterType((*DeterministicParams)(nil), "grpc.testing.DeterministicParams")

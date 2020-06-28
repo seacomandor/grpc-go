@@ -149,7 +149,7 @@ func (m *RpcProtocolVersions_Version) GetMinor() uint32 {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.gcp.SecurityLevel", SecurityLevel_name, SecurityLevel_value)
+	proto.RegisterEnum("grpc.s.gcp.SecurityLevel", SecurityLevel_name, SecurityLevel_value)
 	proto.RegisterType((*RpcProtocolVersions)(nil), "grpc.gcp.RpcProtocolVersions")
 	proto.RegisterType((*RpcProtocolVersions_Version)(nil), "grpc.gcp.RpcProtocolVersions.Version")
 }

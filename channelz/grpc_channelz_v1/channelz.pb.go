@@ -2711,8 +2711,8 @@ func (m *GetSocketResponse) GetSocket() *Socket {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.channelz.v1.ChannelConnectivityState_State", ChannelConnectivityState_State_name, ChannelConnectivityState_State_value)
-	proto.RegisterEnum("grpc.channelz.v1.ChannelTraceEvent_Severity", ChannelTraceEvent_Severity_name, ChannelTraceEvent_Severity_value)
+	proto.RegisterEnum("grpc.s.channelz.v1.ChannelConnectivityState_State", ChannelConnectivityState_State_name, ChannelConnectivityState_State_value)
+	proto.RegisterEnum("grpc.s.channelz.v1.ChannelTraceEvent_Severity", ChannelTraceEvent_Severity_name, ChannelTraceEvent_Severity_value)
 	proto.RegisterType((*Channel)(nil), "grpc.channelz.v1.Channel")
 	proto.RegisterType((*Subchannel)(nil), "grpc.channelz.v1.Subchannel")
 	proto.RegisterType((*ChannelConnectivityState)(nil), "grpc.channelz.v1.ChannelConnectivityState")

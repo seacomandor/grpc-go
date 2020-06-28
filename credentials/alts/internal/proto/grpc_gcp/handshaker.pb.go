@@ -878,8 +878,8 @@ func (m *HandshakerResp) GetStatus() *HandshakerStatus {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.gcp.HandshakeProtocol", HandshakeProtocol_name, HandshakeProtocol_value)
-	proto.RegisterEnum("grpc.gcp.NetworkProtocol", NetworkProtocol_name, NetworkProtocol_value)
+	proto.RegisterEnum("grpc.s.gcp.HandshakeProtocol", HandshakeProtocol_name, HandshakeProtocol_value)
+	proto.RegisterEnum("grpc.s.gcp.NetworkProtocol", NetworkProtocol_name, NetworkProtocol_value)
 	proto.RegisterType((*Endpoint)(nil), "grpc.gcp.Endpoint")
 	proto.RegisterType((*Identity)(nil), "grpc.gcp.Identity")
 	proto.RegisterMapType((map[string]string)(nil), "grpc.gcp.Identity.AttributesEntry")

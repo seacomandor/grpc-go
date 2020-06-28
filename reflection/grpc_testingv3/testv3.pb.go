@@ -284,7 +284,7 @@ func init() {
 	proto.RegisterType((*SearchResponseV3_Result)(nil), "grpc.testingv3.SearchResponseV3.Result")
 	proto.RegisterType((*SearchResponseV3_Result_Value)(nil), "grpc.testingv3.SearchResponseV3.Result.Value")
 	proto.RegisterType((*SearchRequestV3)(nil), "grpc.testingv3.SearchRequestV3")
-	proto.RegisterEnum("grpc.testingv3.SearchResponseV3_State", SearchResponseV3_State_name, SearchResponseV3_State_value)
+	proto.RegisterEnum("grpc.s.testingv3.SearchResponseV3_State", SearchResponseV3_State_name, SearchResponseV3_State_value)
 }
 
 // Reference imports to suppress errors if they are not otherwise used.

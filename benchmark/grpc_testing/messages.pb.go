@@ -685,8 +685,8 @@ func (m *ReconnectInfo) GetBackoffMs() []int32 {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.testing.PayloadType", PayloadType_name, PayloadType_value)
-	proto.RegisterEnum("grpc.testing.CompressionType", CompressionType_name, CompressionType_value)
+	proto.RegisterEnum("grpc.s.testing.PayloadType", PayloadType_name, PayloadType_value)
+	proto.RegisterEnum("grpc.s.testing.CompressionType", CompressionType_name, CompressionType_value)
 	proto.RegisterType((*Payload)(nil), "grpc.testing.Payload")
 	proto.RegisterType((*EchoStatus)(nil), "grpc.testing.EchoStatus")
 	proto.RegisterType((*SimpleRequest)(nil), "grpc.testing.SimpleRequest")

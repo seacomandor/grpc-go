@@ -758,8 +758,8 @@ func (m *LoadBalancerStatsResponse) GetNumFailures() int32 {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.testing.PayloadType", PayloadType_name, PayloadType_value)
-	proto.RegisterEnum("grpc.testing.GrpclbRouteType", GrpclbRouteType_name, GrpclbRouteType_value)
+	proto.RegisterEnum("grpc.s.testing.PayloadType", PayloadType_name, PayloadType_value)
+	proto.RegisterEnum("grpc.s.testing.GrpclbRouteType", GrpclbRouteType_name, GrpclbRouteType_value)
 	proto.RegisterType((*Empty)(nil), "grpc.testing.Empty")
 	proto.RegisterType((*Payload)(nil), "grpc.testing.Payload")
 	proto.RegisterType((*EchoStatus)(nil), "grpc.testing.EchoStatus")

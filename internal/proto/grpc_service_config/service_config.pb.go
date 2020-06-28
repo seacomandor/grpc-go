@@ -1534,7 +1534,7 @@ func (m *ServiceConfig_HealthCheckConfig) GetServiceName() *wrappers.StringValue
 }
 
 func init() {
-	proto.RegisterEnum("grpc.service_config.ServiceConfig_LoadBalancingPolicy", ServiceConfig_LoadBalancingPolicy_name, ServiceConfig_LoadBalancingPolicy_value)
+	proto.RegisterEnum("grpc.s.service_config.ServiceConfig_LoadBalancingPolicy", ServiceConfig_LoadBalancingPolicy_name, ServiceConfig_LoadBalancingPolicy_value)
 	proto.RegisterType((*MethodConfig)(nil), "grpc.service_config.MethodConfig")
 	proto.RegisterType((*MethodConfig_Name)(nil), "grpc.service_config.MethodConfig.Name")
 	proto.RegisterType((*MethodConfig_RetryPolicy)(nil), "grpc.service_config.MethodConfig.RetryPolicy")

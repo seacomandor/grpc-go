@@ -508,7 +508,7 @@ func (m *RouteLookupConfig) GetRequestProcessingStrategy() RouteLookupConfig_Req
 }
 
 func init() {
-	proto.RegisterEnum("grpc.lookup.v1.RouteLookupConfig_RequestProcessingStrategy", RouteLookupConfig_RequestProcessingStrategy_name, RouteLookupConfig_RequestProcessingStrategy_value)
+	proto.RegisterEnum("grpc.s.lookup.v1.RouteLookupConfig_RequestProcessingStrategy", RouteLookupConfig_RequestProcessingStrategy_name, RouteLookupConfig_RequestProcessingStrategy_value)
 	proto.RegisterType((*NameMatcher)(nil), "grpc.lookup.v1.NameMatcher")
 	proto.RegisterType((*GrpcKeyBuilder)(nil), "grpc.lookup.v1.GrpcKeyBuilder")
 	proto.RegisterType((*GrpcKeyBuilder_Name)(nil), "grpc.lookup.v1.GrpcKeyBuilder.Name")

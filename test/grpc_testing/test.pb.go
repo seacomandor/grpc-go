@@ -510,7 +510,7 @@ func (m *StreamingOutputCallResponse) GetPayload() *Payload {
 }
 
 func init() {
-	proto.RegisterEnum("grpc.testing.PayloadType", PayloadType_name, PayloadType_value)
+	proto.RegisterEnum("grpc.s.testing.PayloadType", PayloadType_name, PayloadType_value)
 	proto.RegisterType((*Empty)(nil), "grpc.testing.Empty")
 	proto.RegisterType((*Payload)(nil), "grpc.testing.Payload")
 	proto.RegisterType((*SimpleRequest)(nil), "grpc.testing.SimpleRequest")
